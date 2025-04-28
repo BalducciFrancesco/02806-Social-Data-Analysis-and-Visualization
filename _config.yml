@@ -30,7 +30,7 @@ email:
 description: >- # this means to ignore newlines until "baseurl:"
   Wonderful projects created in the Social Data Analysis and Visualization course at DTU!
 logo: assets/images/logo.jpg
-baseurl: "/social-data-analysis" # the subpath of your site, e.g. /blog
+baseurl: "/02806-Social-Data-Analysis-and-Visualization" # the subpath of your site, e.g. /blog
 # url: "balduccifrancesco.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # github_username:  BalducciFrancesco
 
