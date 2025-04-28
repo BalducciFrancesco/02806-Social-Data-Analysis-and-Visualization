@@ -10,4 +10,4 @@
 
 [Read more here](https://github.com/suneman/socialdata2025/blob/main/lectures/Week7.ipynb)
 
-Then run with `bundle exec jekyll serve` and open 
+Then run with `bundle exec jekyll serve` and open.
