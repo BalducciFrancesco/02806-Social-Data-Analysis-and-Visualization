@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 12101 Social Data Analyzizz and Visualization
+title: 02806 Social Data Analyzizz and Visualization
 authors: 
   - Ludovico Cappellato
   - Maja Klerk
@@ -28,9 +28,9 @@ email:
   - s184488@student.dtu.dk
   - s250200@student.dtu.dk
 description: >- # this means to ignore newlines until "baseurl:"
-  Wonderful assignments created during the Social Data Analysis and Visualization course at DTU!
+  Wonderful projects created in the Social Data Analysis and Visualization course at DTU!
 logo: assets/images/logo.jpg
-baseurl: "/SF-crimes-weekend" # the subpath of your site, e.g. /blog
+baseurl: "/social-data-analysis" # the subpath of your site, e.g. /blog
 # url: "balduccifrancesco.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # github_username:  BalducciFrancesco
 
