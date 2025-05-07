@@ -22,6 +22,7 @@ tags: final_project
 While UFO sightings may feel intense and scary, my analysis takes a data driven approach to look into possible explanations of the sightings. By examining correlations with external factors, such as extreme weather conditions, I explore whether these sightings might be better explained by natural phenomena rather than extraterrestrial activity. 
 
 
+![Subplot UFO correlating with extreme weather]({{ site.baseurl }}/assets/images/subplots.png)
 
 # Contributions
 
