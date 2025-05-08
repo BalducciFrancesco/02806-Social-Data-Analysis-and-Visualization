@@ -167,9 +167,25 @@ Thanks for following us on this emotional rollercoaster through the unknown. See
 
 # Part 3
 While UFO sightings may feel intense and scary, my analysis takes a data driven approach to look into possible explanations of the sightings. By examining correlations with external factors, such as extreme weather conditions, I explore whether these sightings might be better explained by natural phenomena rather than extraterrestrial activity. 
+To investigate whether natural phenomena could explain some of the reported UFO sightings, I chose to explore the influence of severe weather events. For this, I used storm event data from NOAA’s Storm Events Database (1950–2024), which includes categorized events such as thunderstorms, hail, and high wind, along with geographic and temporal information. Since the UFO dataset ends in 2013, I limited the weather data to the years 1960–2013 and cleaned it by removing rows with missing values in key fields like location and date, leaving us with 751,321 entries. I also excluded long duration events like drought and heat, as they were less likely to be relevant to sudden sightings and would have distorted the analysis.
 
+To explore whether extreme weather events might influence the number of reported UFO sightings, we narrowed our focus to the top 10 most frequent weather types in the U.S. storm event dataset, excluding 'Heat' and 'Drought' due to their long duration and low relevance to sudden visual anomalies.
+
+Let’s start by looking at the subplot below, which visualizes UFO sightings in the 16 U.S. states with the highest number of reports. The bars show the total number of sightings during extreme weather events, with red indicating sightings that occurred without any such events. As seen, there is considerable variation between states. The most common weather types associated with sightings are hail, thunderstorms, and high wind, conditions that could easily disturb or obscure visual overview. For instance, strong winds may lift debris or objects into the sky, while heavy snow, fog, or rain can reduce visibility, increasing the chance of misinterpretation.
+
+Interestingly, some states show a relatively higher proportion of sightings during extreme weather; Colorado, Texas, Illinois, and Missouri, while others, like Oregon, Washington, Arizona, and New Jersey, have most sightings reported in calm weather.
+
+This contrast could partly be explained by regional weather patterns. States like Colorado, Texas, and Missouri are known for dramatic and fast-changing weather, including thunderstorms, tornadoes, and strong winds. These weather patterns may increase the chance of misinterpreting natural events as UFOs. Illinois, also sees varied weather and has large urban areas with lots of air traffic, which could add to visual confusion.
+
+On the other hand, Oregon and Washington (Pacific Northwest) are known for frequent cloud cover and rain, but not necessarily for dramatic weather events, but both states have a long history of UFO interest. Washington, for instance, was the site of one of the first major modern UFO sightings in 1947 (the "Kenneth Arnold sighting"). Arizona is famously home to the 1997 “Phoenix Lights” incident, one of the most widely reported UFO sightings in U.S. history. New Jersey, while more urban, is close to New York and has a high population density, which may lead to more overall reports simply due to the number of people.
+
+Taken together, these patterns suggest that both environmental and cultural factors influence UFO sighting trends. States with more extreme weather may generate more UFO reports during storms due to natural misinterpretations, while states with strong UFO-related histories or high public interest might see more reports in general, regardless of the weather.
 
 ![Subplot UFO correlating with extreme weather]({{ site.baseurl }}/assets/images/subplots.png)
+
+Across all states, we observe that 66.2% of UFO sightings occur during some form of weather event, with the most frequent being thunderstorms and hail, as shown in the figure. The high number of sightings during thunderstorms (46,981 reports) raises the possibility that lightning, unusual cloud formations, or electrical disturbances could be mistaken for UFOs. Similarly, during hailstorms, people may be on high alert due to the dramatic atmosphere and may be more likely to notice and report strange phenomena. It's also worth noting that thunder and lightning can distort perception, especially at night, causing aircraft lights, reflections, or weather balloons to appear strange. So, while not everyone may literally mistake thunder for a UFO, it's plausible that the sensory overload and visual confusion of storms create a perfect storm for UFO misidentifications.
+
+![UFO correlating with extreme weather]({{ site.baseurl }}/assets/images/all_states.png)
 
 # Contributions
 
