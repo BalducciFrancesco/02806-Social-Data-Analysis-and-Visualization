@@ -19,6 +19,7 @@ Today, UFOs remain a hot topic, polarizing public opinion. On one side are passi
 
 In this article, we do not aim to take sides in the ongoing debate. Instead, our goal is to present perspectives from both believers and skeptics, while conducting our own analysis of the data. To that end, we turn to the extensive database maintained by the National UFO Reporting Center (NUFORC), which contains hundreds of thousands of reports from around the world. By examining this rich source of information, we aim to highlight some of the most intriguing patterns and anomalies we uncovered. Curious about what we found? Let’s begin.
 In this article we don't want to take one side of the argument, but rather we want to tell the story from both sides and doing our own analysis. For this goal we will analyze the  data, it's an incredible dataset that contains hundreds of thousands of sigthings, from all over the world, summing up the most curious thing that we found during our analysis. Are you curious about this? Let's start!
+
 # Further reading
 
 Due to the intended audience, in this article we're **omitting** some of the exquisitely technical topics and their details. 
@@ -31,8 +32,23 @@ If you're interested in knowing more about the **tools** and the **reasoning** b
 
 We begin by examining the number of UFO sightings reported over the years. In the first chart, you can observe how sightings have evolved, with a clear upward trend. The red cross line marks the launch of the NUFORC website, a key moment in the visibility and accessibility of reporting. Reliable data begins in the 1950s, followed by a relatively stable period between 1965 and 1990, during which reports averaged around 300 per year.
 
-With the advent of the internet, however, the number of sightings increased significantly, peaking in 2014 with nearly 10,000 reports in a single year. This sharp rise suggests that many sightings previously went unreported for lack of a convenient platform. Actually, even in the internet era, most reports are submitted an average of 20 days after the event, indicating that delays in reporting remain common.
+![Total sightings]({{ site.baseurl }}/assets/images/total_sightings.png){: width="400" }{:.centered}
 
+With the advent of the internet, however, the number of sightings increased significantly, peaking in 2014 with nearly 10 000 reports in a single year. This sharp rise suggests that many sightings previously went unreported for lack of a convenient platform. Actually, even in the internet era, most reports are submitted an average of 20 days after the event, indicating that delays in reporting remain common.
+
+To provide a clearer picture of where these sightings occur, we created an interactive world map highlighting major UFO hotspots. You can explore the map freely to examine sightings by location. While the dataset does not cover every region—possibly due to the use of other reporting platforms in certain countries—it still includes reports from every continent.
+
+<iframe src="{{ site.baseurl }}/assets/templates/ufo_heatmap.html" frameborder="0"></iframe>
+
+A closer look reveals that the distribution of sightings closely follows global population patterns, with a significant concentration in major U.S. cities. Interestingly, locations often associated with UFO lore—such as Area 51 in southern Nevada—do not show particularly dense clusters of reported activity, challenging some popular assumptions.
+
+Next, we focused on the temporal patterns of sightings, analyzing whether they are evenly distributed across the year and throughout the day. 
+
+![Month distribution]({{ site.baseurl }}/assets/images/month_distribution.png){: width="400" }{:.centered}
+![Hour distribution]({{ site.baseurl }}/assets/images/hout_distribution.png){: width="400" }{:.centered}
+
+The data shows a clear imbalance. As illustrated in the following two charts, there is a noticeable increase in sightings during the summer months and a decline during the winter. 
+The distribution by hour of the day is even more concentrated: most sightings are reported between 8:00 p.m. and 11:00 p.m.
 
 ## Part 2 – Emotional analysis
 
@@ -146,23 +162,7 @@ That's impressive, to say the least. Considering our passion for **Star Wars** (
 
 Aside from the first two films (they were great), the number of sightings clearly **spikes** around the **release** of new Star Wars movies. Just look at the stretch from 2014 to 2020 — **three major releases and three sharp increases in reports**. Coincidence? We'll never know. But given how often the saga is mentioned in the comments, it’s fascinating to see how often people have **linked** their sightings to the most recent Star Wars release — almost like the movie gives them a cue to describe what they saw.
 
-One thing to keep in mind: we’re looking at the *date of the sighting*, not when the report was posted. That’s why you’ll see Star Wars references even before the original 1977 release — some people report older experiences years later. Or maybe they were UFOs and have had the technology to predict the saga releases.
-
-### Wrapping up
-
-So, what did we learn? **A lot**. And also... *not much*.  
-
-We saw that **emotions** play a major role in how people report UFO sightings — from the *confused* and *scared*, to the *curious* and oddly *joyful*. We tracked how these feelings evolved **over time**, spiked in 2012, got tangled with **movies**, and maybe, just maybe, are becoming **less intense** as the years go by.  
-
-However, before jumping to any **conclusions**, it's important to highlight that our findings **cannot be considered conclusive**. We selected key terms, applied parsimonious models, and worked with **user-submitted reports**, which means there are **different biases** in both the data collection and interpretation. Our analysis offers an *inherently* partial view, the methods we used have limitations, and emotions are — by nature — complex and subjective.
-
-Still, this was ***fun***. 
-
-We used what we learned to do **data mining**, build **visualizations**, tell a **story** and maybe understand a little more about why people see what they see — or at least why they **feel** the way they do when they see it. 
-
-And maybe that’s the point: not to conclude *if* UFOs exist, but to explore **what they mean** to the people who experience them.
-
-Thanks for following us on this emotional rollercoaster through the unknown. See you on the next sighting 👽  
+One thing to keep in mind: we’re looking at the *date of the sighting*, not when the report was posted. That’s why you’ll see Star Wars references even before the original 1977 release — some people report older experiences years later. Or maybe they were UFOs and have had the technology to predict the saga releases. 
 
 
 # Part 3
@@ -189,6 +189,31 @@ Across all states, we observe that 66.2% of UFO sightings occur during some form
 
 Beyond weather and natural explanations, media coverage and pop culture appear to play a powerful role in shaping public perception—and potentially even the number of UFO sightings reported. Since the first major sighting in 1947, UFOs have captured the public imagination through news headlines, blockbuster films, and TV shows. From The X-Files to Pentagon disclosures, these events don't just reflect interest in UFOs, they may also amplify it, prompting spikes in sightings. The timeline below highlights major media and cultural moments related to UFOs, which we can explore to see if they coincide with increases in reported activity.
 
-# Contributions
+## So that's it? UFO doesn't exists?
 
-This goes in the Jupyter only?
+On the other hand, the dataset reveals several details that may seem surprising to those with a stereotypical view of UFO sightings. As highlighted earlier, the distribution of reports does not center around iconic or conspiracy-linked locations, but rather follows population density, with most sightings occurring in large urban areas. This makes sense: where more people are present, there are simply more eyes on the sky—and more chances for unusual events to be noticed and reported.
+
+The resulting portrait of UFO witnesses contrasts with the popular image of dedicated skywatchers or “Ghostbusters of the skies,” armed with cameras and special equipment. Instead, most reports come from ordinary people living in cities, simply recounting what they experienced.
+
+
+Pursuing this line of reasoning, we conducted a detailed analysis of the temporal sequence of sightings and arrived at a surprising result: there appears to be no temporal correlation between them. In other words, if a sighting is reported in a particular location, our analysis suggests it does not lead to an increase in subsequent reports from the same area.
+
+This finding can be interpreted in two ways. On one hand, it reinforces the idea that there is no tightly connected community consistently reporting from suspected hotspots of alien activity. On the other hand, it raises questions. If an unidentified object were to appear in the skies above a city, it would be reasonable to expect that many people would see it—resulting in a cluster of reports from the same time and place. Yet, the data does not reflect this pattern.
+
+In addition, the database maintainers appear to be well aware of the potential for errors or misinterpretations in UFO reports. We observed a high level of diligence in addressing this issue. The site explicitly lists common explanations for sightings—such as rocket launches, bright planets, and camera artifacts—and notes that it reviews reports for signs of hoaxes or jokes. This level of oversight helps ensure that simplistic or easily debunked explanations are filtered out, lending greater credibility to the dataset as a whole.
+
+# Wrapping up
+
+So, what did we learn? **A lot**. And also... *not much*.  
+
+We saw that **emotions** play a major role in how people report UFO sightings — from the *confused* and *scared*, to the *curious* and oddly *joyful*. We tracked how these feelings evolved **over time**, spiked in 2012, got tangled with **movies**, and maybe, just maybe, are becoming **less intense** as the years go by.  
+
+However, before jumping to any **conclusions**, it's important to highlight that our findings **cannot be considered conclusive**. We selected key terms, applied parsimonious models, and worked with **user-submitted reports**, which means there are **different biases** in both the data collection and interpretation. Our analysis offers an *inherently* partial view, the methods we used have limitations, and emotions are — by nature — complex and subjective.
+
+Still, this was ***fun***. 
+
+We used what we learned to do **data mining**, build **visualizations**, tell a **story** and maybe understand a little more about why people see what they see — or at least why they **feel** the way they do when they see it. 
+
+And maybe that’s the point: not to conclude *if* UFOs exist, but to explore **what they mean** to the people who experience them.
+
+Thanks for following us on this emotional rollercoaster through the unknown. See you on the next sighting 👽 
