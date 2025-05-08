@@ -187,6 +187,8 @@ Across all states, we observe that 66.2% of UFO sightings occur during some form
 
 ![UFO correlating with extreme weather]({{ site.baseurl }}/assets/images/all_states.png)
 
+Beyond weather and natural explanations, media coverage and pop culture appear to play a powerful role in shaping public perception—and potentially even the number of UFO sightings reported. Since the first major sighting in 1947, UFOs have captured the public imagination through news headlines, blockbuster films, and TV shows. From The X-Files to Pentagon disclosures, these events don't just reflect interest in UFOs, they may also amplify it, prompting spikes in sightings. The timeline below highlights major media and cultural moments related to UFOs, which we can explore to see if they coincide with increases in reported activity.
+
 # Contributions
 
 This goes in the Jupyter only?
