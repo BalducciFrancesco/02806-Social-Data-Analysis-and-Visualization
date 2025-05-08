@@ -10,12 +10,15 @@ tags: final_project
 * Table of Contents  
 {:toc}
 
-# Context
+# Mystery in the Sky: Blue Spiral Sparks UFO Debate
+Recently, a [bright blue spiral appeared](https://www.bbc.com/news/articles/c241073v66jo) in the European skies, capturing the attention of countless onlookers. The unusual sight left many people staring upward in wonder. In this case, an explanation was provided relatively quickly: it was caused by fuel burning during a rocket launch. However, at the moment it occurred, no one could be sure of what they were seeing. Social media quickly lit up with speculation—ranging from scientific theories to claims of UFO activity.
 
-# About the dataset
+This raises an interesting question: what is the current state of UFO sightings? How has the phenomenon evolved from early reports to the age of the internet?
 
-# Goal of the assignment
+Today, UFOs remain a hot topic, polarizing public opinion. On one side are passionate believers, convinced of extraterrestrial visitation; on the other are skeptics and debunkers, who often attribute sightings to optical illusions, atmospheric phenomena, or psychological factors. With this in mind, we aim to explore and analyze the UFO phenomenon using our own tools and perspective.
 
+In this article, we do not aim to take sides in the ongoing debate. Instead, our goal is to present perspectives from both believers and skeptics, while conducting our own analysis of the data. To that end, we turn to the extensive database maintained by the National UFO Reporting Center (NUFORC), which contains hundreds of thousands of reports from around the world. By examining this rich source of information, we aim to highlight some of the most intriguing patterns and anomalies we uncovered. Curious about what we found? Let’s begin.
+In this article we don't want to take one side of the argument, but rather we want to tell the story from both sides and doing our own analysis. For this goal we will analyze the  data, it's an incredible dataset that contains hundreds of thousands of sigthings, from all over the world, summing up the most curious thing that we found during our analysis. Are you curious about this? Let's start!
 # Further reading
 
 Due to the intended audience, in this article we're **omitting** some of the exquisitely technical topics and their details. 
@@ -23,6 +26,13 @@ Due to the intended audience, in this article we're **omitting** some of the exq
 If you're interested in knowing more about the **tools** and the **reasoning** behind some of the charts that will follow, we encourage you to read more in the [source notebook](https://github.com/BalducciFrancesco/02806-Social-Data-Analysis-and-Visualization/blob/master/assets/sources/final-project.ipynb).
 
 # Step-by-step
+
+## Part 1 - Knowing the database
+
+We begin by examining the number of UFO sightings reported over the years. In the first chart, you can observe how sightings have evolved, with a clear upward trend. The red cross line marks the launch of the NUFORC website, a key moment in the visibility and accessibility of reporting. Reliable data begins in the 1950s, followed by a relatively stable period between 1965 and 1990, during which reports averaged around 300 per year.
+
+With the advent of the internet, however, the number of sightings increased significantly, peaking in 2014 with nearly 10,000 reports in a single year. This sharp rise suggests that many sightings previously went unreported for lack of a convenient platform. Actually, even in the internet era, most reports are submitted an average of 20 days after the event, indicating that delays in reporting remain common.
+
 
 ## Part 2 – Emotional analysis
 
