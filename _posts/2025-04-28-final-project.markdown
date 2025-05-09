@@ -11,7 +11,10 @@ tags: final_project
 {:toc}
 
 # Mystery in the Sky: Blue Spiral Sparks UFO Debate
-Recently, a [bright blue spiral appeared](https://www.bbc.com/news/articles/c241073v66jo) in the European skies, capturing the attention of countless onlookers. The unusual sight left many people staring upward in wonder. In this case, an explanation was provided relatively quickly: it was caused by fuel burning during a rocket launch. However, at the moment it occurred, no one could be sure of what they were seeing. Social media quickly lit up with speculation—ranging from scientific theories to claims of UFO activity.
+
+<iframe height="450" src="https://www.youtube.com/embed/nI4G8Br79sQ?si=--CpABgxoLOkeRiB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>{:.centered}
+
+&nbsp;
 
 This raises an interesting question: what is the current state of UFO sightings? How has the phenomenon evolved from early reports to the age of the internet?
 
@@ -24,28 +27,28 @@ In this article we don't want to take one side of the argument, but rather we wa
 
 Due to the intended audience, in this article we're **omitting** some of the exquisitely technical topics and their details. 
 
-If you're interested in knowing more about the **tools** and the **reasoning** behind some of the charts that will follow, we encourage you to read more in the [source notebook](https://github.com/BalducciFrancesco/02806-Social-Data-Analysis-and-Visualization/blob/master/assets/sources/final-project.ipynb).
+If you're interested in knowing more about the **tools** and the **reasoning** behind some of the charts that will follow, we encourage you to read more in the [source notebook](https://github.com/BalducciFrancesco/02806-Social-Data-Analysis-and-Visualization/blob/master/assets/sources/final-project_technical.ipynb).
 
 # Step-by-step
 
-## Part 1 - Knowing the database
+## Part 1 – Knowing the database
 
 We begin by examining the number of UFO sightings reported over the years. In the first chart, you can observe how sightings have evolved, with a clear upward trend. The red cross line marks the launch of the NUFORC website, a key moment in the visibility and accessibility of reporting. Reliable data begins in the 1950s, followed by a relatively stable period between 1965 and 1990, during which reports averaged around 300 per year.
 
-![Total sightings]({{ site.baseurl }}/assets/images/total_sightings.png){: width="400" }{:.centered}
+![Total sightings]({{ site.baseurl }}/assets/images/total_sightings.png){: width="700" }{:.centered}
 
 With the advent of the internet, however, the number of sightings increased significantly, peaking in 2014 with nearly 10 000 reports in a single year. This sharp rise suggests that many sightings previously went unreported for lack of a convenient platform. Actually, even in the internet era, most reports are submitted an average of 20 days after the event, indicating that delays in reporting remain common.
 
 To provide a clearer picture of where these sightings occur, we created an interactive world map highlighting major UFO hotspots. You can explore the map freely to examine sightings by location. While the dataset does not cover every region—possibly due to the use of other reporting platforms in certain countries—it still includes reports from every continent.
 
-<iframe src="{{ site.baseurl }}/assets/templates/ufo_heatmap.html" frameborder="0"></iframe>
+<iframe src="{{ site.baseurl }}/assets/templates/ufo_heatmap.html" frameborder="0" style="width: 100%; height: 500px"></iframe>{:.centered}
 
 A closer look reveals that the distribution of sightings closely follows global population patterns, with a significant concentration in major U.S. cities. Interestingly, locations often associated with UFO lore—such as Area 51 in southern Nevada—do not show particularly dense clusters of reported activity, challenging some popular assumptions.
 
 Next, we focused on the temporal patterns of sightings, analyzing whether they are evenly distributed across the year and throughout the day. 
 
-![Month distribution]({{ site.baseurl }}/assets/images/month_distribution.png){: width="400" }{:.centered}
-![Hour distribution]({{ site.baseurl }}/assets/images/hout_distribution.png){: width="400" }{:.centered}
+![Month distribution]({{ site.baseurl }}/assets/images/month_distribution.png){:.centered}
+![Hour distribution]({{ site.baseurl }}/assets/images/hour_distribution.png){:.centered}
 
 The data shows a clear imbalance. As illustrated in the following two charts, there is a noticeable increase in sightings during the summer months and a decline during the winter. 
 The distribution by hour of the day is even more concentrated: most sightings are reported between 8:00 p.m. and 11:00 p.m.
@@ -66,7 +69,7 @@ The theory will certainly sound *interesting* (read: boring), but now it’s tim
 
 Below, you’ll find a so-called *word cloud* — a simple way to show the most frequent words, where the **size** of each word reflects how often it appears in the dataset. Let’s take a look!
 
-![Most occurring words]({{ site.baseurl }}/assets/images/fp_most_occurring_words.png){: width="400" }{:.centered}
+![Most occurring words]({{ site.baseurl }}/assets/images/fp_most_occurring_words.png){:.centered-small}
 
 Unsurprisingly, the **top** words include **light**, **fast**, **moving**, and **bright** — which makes sense given that most reports focus on describing what was seen in vivid, physical detail.
 
@@ -78,7 +81,7 @@ Nice, now we know which words they have used but *when do the numbers come*?!?! 
 
 We would be very *happy* if you could appreciate (and keep in mind) the **color coding**, since you will see it used consistently in the following charts and it will may be of help for you to follow each emotion more easily.
 
-![Number of sightings by Emotion]({{ site.baseurl }}/assets/images/fp_sightings_by_emotion.png){: width="500" }{:.centered}
+![Number of sightings by Emotion]({{ site.baseurl }}/assets/images/fp_sightings_by_emotion.png){:.centered-small}
 
 The chart clearly shows that *Confused* is the **most frequent** emotion, with almost 8000 reports. Right after, we find *Scared*, *Curious*, and *Surprised*, each appearing less often but with a **gradual drop**, like steps in a staircase. *Joy* follows closely behind *Surprised*, both reaching around 3300 entries. At the bottom of the ranking, *Sad* stands out for its **low occurrence**, with only 833 matches across the dataset.
 
@@ -86,7 +89,7 @@ The chart clearly shows that *Confused* is the **most frequent** emotion, with a
 
 Cool, but now we would like to know whether the emotions **throughout the years** are going up or down! Is any emotion showing a similar trend to another? Or maybe diverging completely? Could there be a correlation hidden in the way these emotions evolve over time? Let’s check it out!
 
-![Number of sightings by Years]({{ site.baseurl }}/assets/images/fp_sightings_by_emotion_years.png){: width="750" }{:.centered}
+![Number of sightings by Years]({{ site.baseurl }}/assets/images/fp_sightings_by_emotion_years.png){:.centered}
 
 Most emotions show a noticeable **rise after 2000**, which we might consider linked to the popularity of **social media** and the growing accessibility of the platform we got the data from, [NUFORC](https://nuforc.org/about-us/), active on **Internet** since 1995. Interestingly, they all **peaked in 2012** before **dropping** off — a phenomenon that even made it into the [news](https://www.huffpost.com/entry/american-ufo-reports-down_b_2982532), though the reasons behind it are still unclear.
 
@@ -112,7 +115,7 @@ That being said, *Curious* best friend is arguably *Scared* as they move most of
 
 We know (or do we?) that seeing a UFO can be quite the **unsettling** experience. We've been proven to be increasingly brave by the previous plots, so we asked ourselves: will the *Scared* trend ever come to an end? To get an answer, we put our skills to work and *automagically* trained a model using the past data — pushing it forward in time to see where things might be headed.
 
-![Scared emotion projection over Years]({{ site.baseurl }}/assets/images/fp_scared_years_projection.png){: width="800" }{:.centered}
+![Scared emotion projection over Years]({{ site.baseurl }}/assets/images/fp_scared_years_projection.png){:.centered}
 
 Yes, it's a long timespan. But as you can see by fitted curve, it suggests that the frightening effect of sightings might fade away by **2040**!. That’s a spark of hope — we’ll keep you posted when we get there.
 
@@ -122,7 +125,7 @@ Emotion sometimes may be fooling us. They may **alter** our perception of **time
 
 Be careful! The plot you're about to see is called a *boxplot* but don't get scared: the **box** shows where most of the durations fall, the **line** in the middle is the typical (*median*) duration, the **whiskers** give an idea of the spread, and the **dots** represent unusually short or long sightings (*outliers*).
 
-![Duration of the sighting by Emotion]({{ site.baseurl }}/assets/images/fp_sightings_by_emotion_duration.png){: width="750" }{:.centered}
+![Duration of the sighting by Emotion]({{ site.baseurl }}/assets/images/fp_sightings_by_emotion_duration.png){:.centered}
 
 Woah, hope you're still with us after that! 
 
@@ -158,12 +161,11 @@ We went further: read through those comments, checked which titles were most men
 
 That's impressive, to say the least. Considering our passion for **Star Wars** (sorry Star Trek fans, we're a bit biased), we didn’t think twice before diving deeper into that one. So we used a diagram you’re probably very familiar with by now — the **barplot** — to see if there’s any **correlation** between the **number** of sightings reported in a given year and the **release of a Star Wars movie**:
 
-![Star wars occurance in sightings by Years]({{ site.baseurl }}/assets/images/fp_sightings_by_star_wars_years.png){: width="750" }{:.centered}
+![Star wars occurance in sightings by Years]({{ site.baseurl }}/assets/images/fp_sightings_by_star_wars_years.png){:.centered}
 
 Aside from the first two films (they were great), the number of sightings clearly **spikes** around the **release** of new Star Wars movies. Just look at the stretch from 2014 to 2020 — **three major releases and three sharp increases in reports**. Coincidence? We'll never know. But given how often the saga is mentioned in the comments, it’s fascinating to see how often people have **linked** their sightings to the most recent Star Wars release — almost like the movie gives them a cue to describe what they saw.
 
 One thing to keep in mind: we’re looking at the *date of the sighting*, not when the report was posted. That’s why you’ll see Star Wars references even before the original 1977 release — some people report older experiences years later. Or maybe they were UFOs and have had the technology to predict the saga releases. 
-
 
 # Part 3
 While UFO sightings may feel intense and scary, my analysis takes a data driven approach to look into possible explanations of the sightings. By examining correlations with external factors, such as extreme weather conditions, I explore whether these sightings might be better explained by natural phenomena rather than extraterrestrial activity. 
@@ -181,11 +183,11 @@ On the other hand, Oregon and Washington (Pacific Northwest) are known for frequ
 
 Taken together, these patterns suggest that both environmental and cultural factors influence UFO sighting trends. States with more extreme weather may generate more UFO reports during storms due to natural misinterpretations, while states with strong UFO-related histories or high public interest might see more reports in general, regardless of the weather.
 
-![Subplot UFO correlating with extreme weather]({{ site.baseurl }}/assets/images/subplots.png)
+![Subplot UFO correlating with extreme weather]({{ site.baseurl }}/assets/images/subplots.png){:.centered}
 
 Across all states, we observe that 66.2% of UFO sightings occur during some form of weather event, with the most frequent being thunderstorms and hail, as shown in the figure. The high number of sightings during thunderstorms (46,981 reports) raises the possibility that lightning, unusual cloud formations, or electrical disturbances could be mistaken for UFOs. Similarly, during hailstorms, people may be on high alert due to the dramatic atmosphere and may be more likely to notice and report strange phenomena. It's also worth noting that thunder and lightning can distort perception, especially at night, causing aircraft lights, reflections, or weather balloons to appear strange. So, while not everyone may literally mistake thunder for a UFO, it's plausible that the sensory overload and visual confusion of storms create a perfect storm for UFO misidentifications.
 
-![UFO correlating with extreme weather]({{ site.baseurl }}/assets/images/all_states.png)
+![UFO correlating with extreme weather]({{ site.baseurl }}/assets/images/all_states.png){:.centered}
 
 Beyond weather and natural explanations, media coverage and pop culture appear to play a powerful role in shaping public perception—and potentially even the number of UFO sightings reported. Since the first major sighting in 1947, UFOs have captured the public imagination through news headlines, blockbuster films, and TV shows. From The X-Files to Pentagon disclosures, these events don't just reflect interest in UFOs, they may also amplify it, prompting spikes in sightings. The timeline below highlights major media and cultural moments related to UFOs, which we can explore to see if they coincide with increases in reported activity.
 
