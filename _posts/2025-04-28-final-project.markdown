@@ -191,6 +191,9 @@ Across all states, we observe that 66.2% of UFO sightings occur during some form
 
 Beyond weather and natural explanations, media coverage and pop culture appear to play a powerful role in shaping public perception—and potentially even the number of UFO sightings reported. Since the first major sighting in 1947, UFOs have captured the public imagination through news headlines, blockbuster films, and TV shows. From The X-Files to Pentagon disclosures, these events don't just reflect interest in UFOs, they may also amplify it, prompting spikes in sightings. The timeline below highlights major media and cultural moments related to UFOs, which we can explore to see if they coincide with increases in reported activity.
 
+<iframe src="{{ site.baseurl }}/assets/templates/UFO Sightings Timeline.html" frameborder="0" style="width: 100%; height: 500px"></iframe>{:.centered}
+
+
 ## So that's it? UFO doesn't exists?
 
 On the other hand, the dataset reveals several details that may seem surprising to those with a stereotypical view of UFO sightings. As highlighted earlier, the distribution of reports does not center around iconic or conspiracy-linked locations, but rather follows population density, with most sightings occurring in large urban areas. This makes sense: where more people are present, there are simply more eyes on the sky—and more chances for unusual events to be noticed and reported.
