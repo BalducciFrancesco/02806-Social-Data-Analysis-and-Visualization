@@ -23,18 +23,6 @@ a:hover {
     font-weight: unset;
 }
 
-@media print, screen and (max-width: 960px) {
-    header {
-        padding-right: unset;
-    }
-} 
-
-@media print, screen and (max-height: 750px) {
-    footer {
-        display: none;
-    }
-} 
-
 .wrapper {
     width: 1200px;
 }
@@ -48,3 +36,19 @@ section {
         margin-bottom: 0;
     }
 }
+
+@media print, screen and (max-width: 960px) {
+    header {
+        padding-right: unset;
+
+        img[alt="Logo"] {
+            width: 50%;
+        }
+    }
+} 
+
+@media print, screen and (max-height: 750px) {
+    footer {
+        display: none;
+    }
+} 
