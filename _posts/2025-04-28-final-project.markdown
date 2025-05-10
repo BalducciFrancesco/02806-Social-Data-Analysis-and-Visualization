@@ -193,9 +193,7 @@ Beyond weather and natural explanations, media coverage and pop culture appear t
 
 <iframe src="{{ site.baseurl }}/assets/templates/UFO Sightings Timeline.html" frameborder="0" style="width: 100%; height: 500px"></iframe>{:.centered}
 
-<iframe src="{{ site.baseurl }}/assets/templates/ufo_population_map.html" frameborder="0" style="width: 100%; height: 500px"></iframe>{:.centered}
-
-<iframe src="{{ site.baseurl }}/assets/templates/ufo_sightings_map.html" frameborder="0" style="width: 100%; height: 500px"></iframe>{:.centered}
+<iframe src="{{ site.baseurl }}/assets/templates/combined_ufo_population_maps.html" frameborder="0" style="width: 100%; height: 500px"></iframe>{:.centered}
 
 <iframe src="{{ site.baseurl }}/assets/templates/ufo_sightings_residuals.html" frameborder="0" style="width: 100%; height: 500px"></iframe>{:.centered}
 
