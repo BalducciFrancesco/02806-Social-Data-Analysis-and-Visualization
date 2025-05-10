@@ -167,7 +167,7 @@ Aside from the first two films (they were great), the number of sightings clearl
 
 One thing to keep in mind: we’re looking at the *date of the sighting*, not when the report was posted. That’s why you’ll see Star Wars references even before the original 1977 release — some people report older experiences years later. Or maybe they were UFOs and have had the technology to predict the saga releases. 
 
-# Part 3
+## Part 3 - What is really going on?
 While UFO sightings may feel intense and scary, my analysis takes a data driven approach to look into possible explanations of the sightings. By examining correlations with external factors, such as extreme weather conditions, I explore whether these sightings might be better explained by natural phenomena rather than extraterrestrial activity. 
 To investigate whether natural phenomena could explain some of the reported UFO sightings, I chose to explore the influence of severe weather events. For this, I used storm event data from NOAA’s Storm Events Database (1950–2024), which includes categorized events such as thunderstorms, hail, and high wind, along with geographic and temporal information. Since the UFO dataset ends in 2013, I limited the weather data to the years 1960–2013 and cleaned it by removing rows with missing values in key fields like location and date, leaving us with 751,321 entries. I also excluded long duration events like drought and heat, as they were less likely to be relevant to sudden sightings and would have distorted the analysis.
 
@@ -191,7 +191,7 @@ Across all states, we observe that 66.2% of UFO sightings occur during some form
 
 Beyond weather and natural explanations, media coverage and pop culture appear to play a powerful role in shaping public perception—and potentially even the number of UFO sightings reported. Since the first major sighting in 1947, UFOs have captured the public imagination through news headlines, blockbuster films, and TV shows. From The X-Files to Pentagon disclosures, these events don't just reflect interest in UFOs, they may also amplify it, prompting spikes in sightings. The timeline below highlights major media and cultural moments related to UFOs, which we can explore to see if they coincide with increases in reported activity.
 
-<iframe src="{{ site.baseurl }}/assets/templates/UFO Sightings Timeline.html" frameborder="0" style="width: 100%; height: 500px"></iframe>{:.centered}
+<iframe src="{{ site.baseurl }}/assets/templates/ufo_timeline.html" frameborder="0" style="width: 100%; height: 500px"></iframe>{:.centered}
 
 <iframe src="{{ site.baseurl }}/assets/templates/combined_ufo_population_maps.html" frameborder="0" style="width: 100%; height: 500px"></iframe>{:.centered}
 
