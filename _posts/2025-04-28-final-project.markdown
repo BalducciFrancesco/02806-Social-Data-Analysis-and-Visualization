@@ -1,10 +1,6 @@
----
-layout: post
-title: "Final project"
-date:   2025-04-28 12:00:00 +0100
-tags: final_project
----
 
+<<<<<<< HEAD
+=======
 # Table of Contents
 
 * Table of Contents  
@@ -233,3 +229,5 @@ We used what we learned to do **data mining**, build **visualizations**, tell a 
 And maybe that’s the point: not to conclude *if* UFOs exist, but to explore **what they mean** to the people who experience them.
 
 Thanks for following us on this emotional rollercoaster through the unknown. See you on the next sighting 👽 
+
+>>>>>>> 943da061015a80a5abcea23b7e7a82b838d60eae
