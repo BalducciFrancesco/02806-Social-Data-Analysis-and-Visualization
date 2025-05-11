@@ -1,6 +1,10 @@
+---
+layout: post
+title: "Final project"
+date:   2025-04-28 12:00:00 +0100
+tags: final_project
+---
 
-<<<<<<< HEAD
-=======
 # Table of Contents
 
 * Table of Contents  
