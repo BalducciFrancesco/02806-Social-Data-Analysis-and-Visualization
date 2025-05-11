@@ -135,11 +135,31 @@ Now for the so-called **whiskers**: *Curious* (and a few others) has long ones, 
 
 Lastly, the **outliers**: *Confused* shows quite a few dots past the right whisker — **rare** but long events that stand very out from the usual. Most sightings are short, but occasionally something lasts way longer and clearly leaves people puzzled.
 
-### The Imperial March
+## Part 3 - What is really going on?
+While UFO sightings may feel intense and scary, our analysis takes a data driven approach to look into possible explanations of the sightings. By examining correlations with external factors, such as extreme weather conditions, we explore whether these sightings might be better explained by natural phenomena rather than extraterrestrial activity. 
 
-If there's one thing that may influence people's opinions, it's **movies**. You know where we're going with this. Yes, we looked into how many times the word "movie" was **mentioned** in our dataset — and it showed up **1630** times! And that’s only counting the *direct* references.
+### Can bad weather be mistaken for UFOs?
+To explore whether extreme weather events might contribute to the frequency of UFO sightings, we analyzed storm event data from NOAA (1960–2013) alongside UFO sighting reports in the U.S. We focused on severe weather events like thunderstorms, hail, and high winds, excluding less relevant long-duration events like heat and drought.
 
-We went further: read through those comments, checked which titles were most mentioned, and also looked online to identify blockbuster movies about UFOs. That gave us a list of **16 key titles**. Here are the most frequent ones:
+Our analysis reveals considerable regional variation in UFO sightings during extreme weather. States like Colorado, Texas, and Missouri, with fast-changing weather patterns, report more sightings during storms, possibly due to visual confusion from weather disturbances. In contrast, areas like Oregon and New Jersey, with strong UFO histories, have more sightings in calm conditions, indicating cultural factors might also play a role. Overall, both weather and cultural factors influence UFO sighting trends, suggesting that extreme weather could cause misinterpretations of natural phenomena as UFOs.
+
+![Subplot UFO correlating with extreme weather]({{ site.baseurl }}/assets/images/subplots.png){:.centered}
+
+Across all states, we observe that 66.2% of UFO sightings occur during some form of weather event, with the most frequent being thunderstorms and hail, as shown in the figure. The high number of sightings during thunderstorms (46,981 reports) raises the possibility that lightning or unusual cloud formations could be mistaken for UFOs. Similarly, during hailstorms, people may be on high alert due to the dramatic atmosphere and may be more likely to notice and report strange phenomena. It's also worth noting that thunder and lightning can distort perception, especially at night, causing aircraft lights, reflections, or weather balloons to appear strange. So, while not everyone may literally mistake thunder for a UFO, it's plausible that the sensory overload and visual confusion of storms create a perfect storm for UFO misidentifications.
+
+![UFO correlating with extreme weather]({{ site.baseurl }}/assets/images/all_states.png){:.centered}
+
+### Does popculture and news affect the amount of UFOs reported? 
+
+Beyond weather and natural explanations, media coverage and pop culture appear to play a role in shaping public perception—and potentially even the number of UFO sightings reported. Since the first major sighting in 1947, UFOs have captured the public imagination through news headlines, blockbuster films, and TV shows. From The X-Files to Pentagon disclosures, these events don't just reflect interest in UFOs, they may also amplify it, prompting spikes in sightings. The timeline below highlights major media and cultural moments related to UFOs, which we can explore to see if they coincide with increases in reported activity.
+
+When we look at the data, we notice a clear pattern, reported UFO sightings often spike around major media events. In many cases, the number of sightings increases shortly after the release of a new UFO-related film, TV show, or news story. Interestingly, we also observe that sightings sometimes rise just before these releases—perhaps due to pre-release hype. In 1997 Phoenix Lights incident, we see a dramatic increase in reports, especially visible in the 7-day averages. Of course, not all spikes align with media events; holidays like New Year’s Eve and Independence Day often show elevated sightings too—likely due to fireworks or extreme weather events as previouesly discussed. While many spikes fade after a short burst, something changed after the launch of the Pentagon’s UFO program in 2007, since then, we’ve seen a more sustained rise in reports, suggesting that long-term media and government attention might be keeping the topic alive in the public mind.
+
+<iframe src="{{ site.baseurl }}/assets/templates/ufo_timeline.html" frameborder="0" style="width: 100%; height: 550px"></iframe>{:.centered}
+
+#### The Imperial March
+
+We went further: read through the *comments* people made, checked which titles were most mentioned, and also looked online to identify blockbuster movies about UFOs. That gave us a list of **16 key titles**. Here are the most frequent ones:
 
 | **Movie**             | **Count**  |
 | Star Trek (1979)	| 183 |
@@ -167,28 +187,6 @@ Aside from the first two films (they were great), the number of sightings clearl
 
 One thing to keep in mind: we’re looking at the *date of the sighting*, not when the report was posted. That’s why you’ll see Star Wars references even before the original 1977 release — some people report older experiences years later. Or maybe they were UFOs and have had the technology to predict the saga releases. 
 
-## Part 3 - What is really going on?
-While UFO sightings may feel intense and scary, our analysis takes a data driven approach to look into possible explanations of the sightings. By examining correlations with external factors, such as extreme weather conditions, we explore whether these sightings might be better explained by natural phenomena rather than extraterrestrial activity. 
-
-### Can bad weather be mistaken for UFOs?
-To explore whether extreme weather events might contribute to the frequency of UFO sightings, we analyzed storm event data from NOAA (1960–2013) alongside UFO sighting reports in the U.S. We focused on severe weather events like thunderstorms, hail, and high winds, excluding less relevant long-duration events like heat and drought.
-
-Our analysis reveals considerable regional variation in UFO sightings during extreme weather. States like Colorado, Texas, and Missouri, with fast-changing weather patterns, report more sightings during storms, possibly due to visual confusion from weather disturbances. In contrast, areas like Oregon and New Jersey, with strong UFO histories, have more sightings in calm conditions, indicating cultural factors might also play a role. Overall, both weather and cultural factors influence UFO sighting trends, suggesting that extreme weather could cause misinterpretations of natural phenomena as UFOs.
-
-![Subplot UFO correlating with extreme weather]({{ site.baseurl }}/assets/images/subplots.png){:.centered}
-
-Across all states, we observe that 66.2% of UFO sightings occur during some form of weather event, with the most frequent being thunderstorms and hail, as shown in the figure. The high number of sightings during thunderstorms (46,981 reports) raises the possibility that lightning or unusual cloud formations could be mistaken for UFOs. Similarly, during hailstorms, people may be on high alert due to the dramatic atmosphere and may be more likely to notice and report strange phenomena. It's also worth noting that thunder and lightning can distort perception, especially at night, causing aircraft lights, reflections, or weather balloons to appear strange. So, while not everyone may literally mistake thunder for a UFO, it's plausible that the sensory overload and visual confusion of storms create a perfect storm for UFO misidentifications.
-
-![UFO correlating with extreme weather]({{ site.baseurl }}/assets/images/all_states.png){:.centered}
-
-### Does popculture and news affect the amount of UFOs reported? 
-
-Beyond weather and natural explanations, media coverage and pop culture appear to play a role in shaping public perception—and potentially even the number of UFO sightings reported. Since the first major sighting in 1947, UFOs have captured the public imagination through news headlines, blockbuster films, and TV shows. From The X-Files to Pentagon disclosures, these events don't just reflect interest in UFOs, they may also amplify it, prompting spikes in sightings. The timeline below highlights major media and cultural moments related to UFOs, which we can explore to see if they coincide with increases in reported activity.
-
-When we look at the data, we notice a clear pattern, reported UFO sightings often spike around major media events. In many cases, the number of sightings increases shortly after the release of a new UFO-related film, TV show, or news story. Interestingly, we also observe that sightings sometimes rise just before these releases—perhaps due to pre-release hype. In 1997 Phoenix Lights incident, we see a dramatic increase in reports, especially visible in the 7-day averages. Of course, not all spikes align with media events; holidays like New Year’s Eve and Independence Day often show elevated sightings too—likely due to fireworks or extreme weather events as previouesly discussed. While many spikes fade after a short burst, something changed after the launch of the Pentagon’s UFO program in 2007, since then, we’ve seen a more sustained rise in reports, suggesting that long-term media and government attention might be keeping the topic alive in the public mind.
-
-<iframe src="{{ site.baseurl }}/assets/templates/ufo_timeline.html" frameborder="0" style="width: 100%; height: 500px"></iframe>{:.centered}
-
 ### Do more people mean more UFOs?
 
 When we compare UFO sightings across U.S. states, we see a clear trend, sightings tend to follow population density. In the blue choropleth map showing total UFO reports by state, the states with the highest counts are California, Texas, Florida, and New York—exactly what we’d expect given their large populations. This becomes even more apparent when we look at the second map, which shows population by state. The correlation is clear: more people means more potential observers, and therefore more UFO reports. This reinforces the idea that UFO sightings aren’t randomly distributed, but largely reflect where people live.
@@ -205,7 +203,7 @@ We see that Washington, Oregon, California, and Arizona all report more sighting
 
 Our analysis shows that extreme weather events, such as thunderstorms and hail, are closely linked to UFO sightings, likely due to visual misinterpretations caused by weather disturbances. Additionally, cultural factors and media coverage significantly influence the frequency of sightings, with reports often spiking around major UFO-related events. Finally, population density plays a role, with more populated states seeing more sightings. Together, these factors suggest that natural, social, and cultural influences all contribute to the reported UFO phenomenon.
 
-## So that's it? UFO doesn't exists?
+## So that's it? UFOs don't exist?
 
 On the other hand, the dataset reveals several details that may seem surprising to those with a stereotypical view of UFO sightings. As highlighted earlier, the distribution of reports does not center around iconic or conspiracy-linked locations, but rather follows population density, with most sightings occurring in large urban areas. This makes sense: where more people are present, there are simply more eyes on the sky—and more chances for unusual events to be noticed and reported.
 
@@ -233,5 +231,3 @@ We used what we learned to do **data mining**, build **visualizations**, tell a 
 And maybe that’s the point: not to conclude *if* UFOs exist, but to explore **what they mean** to the people who experience them.
 
 Thanks for following us on this emotional rollercoaster through the unknown. See you on the next sighting 👽 
-
->>>>>>> 943da061015a80a5abcea23b7e7a82b838d60eae
