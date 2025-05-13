@@ -16,6 +16,8 @@ tags: final_project
 
 &nbsp;
 
+Recently, a [bright blue spiral appeared](https://www.bbc.com/news/articles/c241073v66jo) in the European skies, capturing the attention of countless onlookers. The unusual sight left many people staring upward in wonder. In this case, an explanation was provided relatively quickly: it was caused by fuel burning during a rocket launch. However, at the moment it occurred, no one could be sure of what they were seeing. Social media quickly lit up with speculation—ranging from scientific theories to claims of UFO activity.
+
 This raises an interesting question: what is the current state of UFO sightings? How has the phenomenon evolved from early reports to the age of the internet?
 
 Today, UFOs remain a hot topic, polarizing public opinion. On one side are passionate believers, convinced of extraterrestrial visitation; on the other are skeptics and debunkers, who often attribute sightings to optical illusions, atmospheric phenomena, or psychological factors. With this in mind, we aim to explore and analyze the UFO phenomenon using our own tools and perspective.
