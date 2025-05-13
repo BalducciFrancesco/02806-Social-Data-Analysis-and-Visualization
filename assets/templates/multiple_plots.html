@@ -7,9 +7,9 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      background-color: white; /* Removed gray background */
       margin: 0;
-      padding: 20px;
+      padding: 0; /* Removed extra padding */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -35,9 +35,9 @@
 
     img {
       width: 100%;
-      border-radius: 10px;
-      border: 4px solid #fff;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      border-radius: 0; /* No rounded corners */
+      border: none;      /* No border */
+      box-shadow: none;  /* No shadow */
     }
 
     .prev, .next {
@@ -86,7 +86,7 @@
     }
 
     function showSlide(n) {
-      let slides = document.getElementsByClassName("slide");
+      const slides = document.getElementsByClassName("slide");
       if (n >= slides.length) slideIndex = 0;
       if (n < 0) slideIndex = slides.length - 1;
       for (let i = 0; i < slides.length; i++) {

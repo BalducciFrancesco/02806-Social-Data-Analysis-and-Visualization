@@ -35,26 +35,28 @@ If you're interested in knowing more about the **tools** and the **reasoning** b
 
 ## Knowing the database
 
-We begin by examining the number of UFO sightings reported over the years. In the first chart, you can observe how sightings have evolved, with a clear upward trend. The red cross line marks the launch of the NUFORC website, a key moment in the visibility and accessibility of reporting. Reliable data begins in the 1950s, followed by a relatively stable period between 1965 and 1990, during which reports averaged around 300 per year.
+Let's start by examining the number of UFO sightings reported over the years. In the first chart, you can observe how sightings have evolved, with a clear upward trend. The red cross line marks the launch of the NUFORC website, a key moment in the visibility and accessibility of reporting. Reliable data begins in the 1950s, followed by a relatively stable period between 1965 and 1990, during which reports averaged around 300 per year.
 
 ![Total sightings]({{ site.baseurl }}/assets/images/total_sightings.png){: width="700" }{:.centered}
 
 With the advent of the internet, however, the number of sightings increased significantly, peaking in 2014 with nearly 10 000 reports in a single year. This sharp rise suggests that many sightings previously went unreported for lack of a convenient platform. Actually, even in the internet era, most reports are submitted an average of 20 days after the event, indicating that delays in reporting remain common.
 
-To provide a clearer picture of where these sightings occur, we created an interactive world map highlighting major UFO hotspots. You can explore the map freely to examine sightings by location and year. While the dataset does not cover every region—possibly due to the use of other reporting platforms in certain countries—it still includes reports from every continent.
+To provide a clearer picture of where these sightings occur, we created an interactive world map highlighting major UFO hotspots. You can explore the map freely to examine sightings by location and year. While the dataset does not cover every region, possibly due to the use of other reporting platforms in certain countries, it still includes reports from every continent. 
 
 <iframe src="{{ site.baseurl }}/assets/templates/ufo_heatmap.html" frameborder="0" style="width: 100%; height: 500px"></iframe>{:.centered}
+<small>Note that data stops in 2014 because we did not found precise data for the remaining period</small>
 
 A closer look reveals that the distribution of sightings closely follows global population patterns, with a significant concentration in major U.S. cities, expecially before 2000s. Interestingly, locations often associated with UFO lore do not show particularly dense clusters of reported activity, challenging some popular assumptions. In the next map you can find as an example sightings around Area 51 military base, in Nevada.
 
 <iframe src="{{ site.baseurl }}/assets/templates/heatmap_around_51.html" frameborder="0" style="width: 100%; height: 500px"></iframe>{:.centered}
 
-Next, we focused on the temporal patterns of sightings, analyzing whether they are evenly distributed across the year, week and day. You can move between the three different temporal patterns using the arrows.
+Awesome! Now let’s dive into the timing of the sightings. Are they spread out evenly across the year, week, or day? Or do they spike at certain moments? Use the arrows to explore each time scale and see what patterns might be hiding in plain sight!
 
 <iframe src="{{ site.baseurl }}/assets/templates/multiple_plots.html" frameborder="0" style="width: 100%; height: 500px"></iframe>{:.centered}
 
-The data reveals a clear imbalance, as illustrated in the three charts: sightings noticeably increase during the summer months and weekends, while they decline during the winter and on Mondays.
-The distribution by hour of the day is even more concentrated: most sightings are reported between 8:00 p.m. and 11:00 p.m.
+The data points to some clear trends: sightings are more frequent during the summer and on weekends, while winter and Mondays see fewer reports. When it comes to the time of day, most sightings are concentrated between 8:00 p.m. and 11:00 p.m.
+
+Now that you know a bit more about the dataset that we analyzed, we can move to the next section!
 
 ## Emotional analysis
 
