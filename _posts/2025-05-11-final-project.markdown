@@ -21,7 +21,7 @@ This raises an interesting question: what is the current state of UFO sightings?
 Today, UFOs remain a hot topic, polarizing public opinion. On one side are passionate believers, convinced of extraterrestrial visitation; on the other are skeptics and debunkers, who often attribute sightings to optical illusions, atmospheric phenomena, or psychological factors. With this in mind, we aim to explore and analyze the UFO phenomenon using our own tools and perspective.
 
 In this article, we do not aim to take sides in the ongoing debate. Instead, our goal is to present perspectives from both believers and skeptics, while conducting our own analysis of the data. To that end, we turn to the extensive database maintained by the National UFO Reporting Center (NUFORC), which contains hundreds of thousands of reports from around the world. By examining this rich source of information, we aim to highlight some of the most intriguing patterns and anomalies we uncovered. Curious about what we found? Let’s begin.
-In this article we don't want to take one side of the argument, but rather we want to tell the story from both sides and doing our own analysis. For this goal we will analyze the  data, it's an incredible dataset that contains hundreds of thousands of sigthings, from all over the world, summing up the most curious thing that we found during our analysis. Are you curious about this? Let's start!
+In this article we don't want to take one side of the argument, but rather we want to tell the story from both sides and doing our own analysis. For this goal we will analyze the data, summing up the most curious thing that we found during our analysis. Are you curious about this? Let's start!
 
 # Further reading
 
@@ -39,18 +39,19 @@ We begin by examining the number of UFO sightings reported over the years. In th
 
 With the advent of the internet, however, the number of sightings increased significantly, peaking in 2014 with nearly 10 000 reports in a single year. This sharp rise suggests that many sightings previously went unreported for lack of a convenient platform. Actually, even in the internet era, most reports are submitted an average of 20 days after the event, indicating that delays in reporting remain common.
 
-To provide a clearer picture of where these sightings occur, we created an interactive world map highlighting major UFO hotspots. You can explore the map freely to examine sightings by location. While the dataset does not cover every region—possibly due to the use of other reporting platforms in certain countries—it still includes reports from every continent.
+To provide a clearer picture of where these sightings occur, we created an interactive world map highlighting major UFO hotspots. You can explore the map freely to examine sightings by location and year. While the dataset does not cover every region—possibly due to the use of other reporting platforms in certain countries—it still includes reports from every continent.
 
 <iframe src="{{ site.baseurl }}/assets/templates/ufo_heatmap.html" frameborder="0" style="width: 100%; height: 500px"></iframe>{:.centered}
 
-A closer look reveals that the distribution of sightings closely follows global population patterns, with a significant concentration in major U.S. cities. Interestingly, locations often associated with UFO lore—such as Area 51 in southern Nevada—do not show particularly dense clusters of reported activity, challenging some popular assumptions.
+A closer look reveals that the distribution of sightings closely follows global population patterns, with a significant concentration in major U.S. cities, expecially before 2000s. Interestingly, locations often associated with UFO lore do not show particularly dense clusters of reported activity, challenging some popular assumptions. In the next map you can find as an example sightings around Area 51 military base, in Nevada.
 
-Next, we focused on the temporal patterns of sightings, analyzing whether they are evenly distributed across the year and throughout the day. 
+<iframe src="{{ site.baseurl }}/assets/templates/heatmap_around_51.html" frameborder="0" style="width: 100%; height: 500px"></iframe>{:.centered}
 
-![Month distribution]({{ site.baseurl }}/assets/images/month_distribution.png){:.centered}
-![Hour distribution]({{ site.baseurl }}/assets/images/hour_distribution.png){:.centered}
+Next, we focused on the temporal patterns of sightings, analyzing whether they are evenly distributed across the year, week and day. You can move between the three different temporal patterns using the arrows.
 
-The data shows a clear imbalance. As illustrated in the following two charts, there is a noticeable increase in sightings during the summer months and a decline during the winter. 
+<iframe src="{{ site.baseurl }}/assets/templates/multiple_plots.html" frameborder="0" style="width: 100%; height: 500px"></iframe>{:.centered}
+
+The data reveals a clear imbalance, as illustrated in the three charts: sightings noticeably increase during the summer months and weekends, while they decline during the winter and on Mondays.
 The distribution by hour of the day is even more concentrated: most sightings are reported between 8:00 p.m. and 11:00 p.m.
 
 ## Emotional analysis
@@ -59,15 +60,15 @@ We all know *how* **passionate** is the public opinion about those who state to 
 
 In this section we're going to focus on a **specific aspect** of the UFO sighting: the numbers around **emotions** of those who claim to have experienced them. In other words, we decided to use the **tools** available to us through this course to extract and visualize *one of the biggest factors* that influence this phenomenon.
 
-The reason? Emotions are often where **objectivity breaks down** — and that’s exactly why they’re interesting to study. They represent the human part of the experience, where logic gets blurred and interpretations take over. It's also the part where most discussions — and disagreements — begin, and where **pseudo-scientific narratives** often find their ground.
+The reason? Emotions are often where **objectivity breaks down** — and that’s exactly why they’re interesting to study. They represent the human part of the experience, where logic gets blurred and interpretations take over. It's also the part where most discussions and disagreements begin, and where **pseudo-scientific narratives** often find their ground.
 
-Since our dataset contains the **full text** written by the people, we attempted to use a mix of **machine learning** techniques to automatically analyze these texts and **extract the corresponding emotion**. Some of the most used yet simple techniques involve applying statistics to estimate the overall "positive" or "negative" tone of each word, or how strongly it *points* to a specific emotion. Considering the *several hundred thousand* records, we decided to opt for a **cherry-picking** approach — selecting some key terms that clearly reference an emotion (e.g. *thrilled*, *excited* → *joy*) — and flagging their presence for each record.
+Since our dataset contains the **full text** written by the people, we attempted to use a mix of **machine learning** techniques to automatically analyze these texts and **extract the corresponding emotion**. Some of the most used yet simple techniques involve applying statistics to estimate the overall "positive" or "negative" tone of each word, or how strongly it *points* to a specific emotion. Considering the *several hundred thousand* records, we decided to opt for a **cherry-picking** approach, selecting some key terms that clearly reference an emotion (e.g. *thrilled*, *excited* → *joy*) and flagging their presence for each record.
 
 ### The importance of words
 
 The theory will certainly sound *interesting* (read: boring), but now it’s time to dive into the actual data. As we mentioned earlier, every analysis that will follow is based on the **words people used** and the **emotion tied to them**. So, it only makes sense to start by looking at the most common ones.
 
-Below, you’ll find a so-called *word cloud* — a simple way to show the most frequent words, where the **size** of each word reflects how often it appears in the dataset. Let’s take a look!
+Below, you’ll find a so-called *word cloud*, a simple way to show the most frequent words, where the **size** of each word reflects how often it appears in the dataset. Let’s take a look!
 
 ![Most occurring words]({{ site.baseurl }}/assets/images/fp_most_occurring_words.png){:.centered-small}
 
@@ -77,7 +78,7 @@ Digging a bit deeper, we also found some **less frequent** but curious terms lik
 
 ### How many emotions
 
-Nice, now we know which words they have used but *when do the numbers come*?!?! We will now show you how **frequent** each emotion is — nothing more, nothing less. 
+Nice, now we know which words they have used but *when do the numbers come*?!?! We will now show you how **frequent** each emotion is, nothing more, nothing less. 
 
 We would be very *happy* if you could appreciate (and keep in mind) the **color coding**, since you will see it used consistently in the following charts and it will may be of help for you to follow each emotion more easily.
 
@@ -97,9 +98,9 @@ Most emotions show a noticeable **rise after 2000**, which we might consider lin
 
 ### The same but funnier!
 
-All good, but I can see your struggle comparing all the plots. Fear not – *unlike you would if you saw an UFO* — we got you covered with a nice plot where we **strongly encourage** you to click around. 
+All good, but I can see your struggle comparing all the plots. Fear not, *unlike you would if you saw an UFO*, we got you covered with a nice plot where we **strongly encourage** you to click around. 
 
-In the next panel, each line represents the **trend of an emotion**, giving you a clearer sense of the magnitude differences between them. You’re free to **toggle** any emotion on or off by simply **clicking** its name in the legend. You can also **zoom in, pan around**, or use the **range slider** at the bottom for quicker navigation. Have fun exploring — we’ll catch up with you right after!
+In the next panel, each line represents the **trend of an emotion**, giving you a clearer sense of the magnitude differences between them. You’re free to **toggle** any emotion on or off by simply **clicking** its name in the legend. You can also **zoom in, pan around**, or use the **range slider** at the bottom for quicker navigation. Have fun exploring, we’ll catch up with you right after!
 
 <iframe src="{{ site.baseurl }}/assets/templates/fp_sightings_by_emotion_years.html" frameborder="0" style="height: 450px; width: 100%; min-width: 800px"></iframe>
 
@@ -107,17 +108,17 @@ As mentioned earlier, the chart immediately draws attention to a **sharp spike**
 
 No surprises ahead: *Confused* dominates the scene, peaking in 2008 and again in 2012 — it seems most people walk away from a sighting feeling more **baffled** than anything else. Meanwhile, *Sad* keeps a **low but steady** profile, never making waves but always present.
 
-Some drama unfolds between *Surprised* and *Curious*: the first takes the lead in 2018, only to be overtaken again by the second in 2020 — maybe reflecting a subtle change in how people **frame their encounters**. 
+Some drama unfolds between *Surprised* and *Curious*: the first takes the lead in 2018, only to be overtaken again by the second in 2020, maybe reflecting a subtle change in how people **frame their encounters**. 
 
 That being said, *Curious* best friend is arguably *Scared* as they move most of the time in **lockstep**, almost mirroring each other over time. Though neither steals the show to the other, their similarity suggests these emotions might be as likely to happen as the other, never deviating too much.
 
 ### Will we ever get accustomed to *them*?
 
-We know (or do we?) that seeing a UFO can be quite the **unsettling** experience. We've been proven to be increasingly brave by the previous plots, so we asked ourselves: will the *Scared* trend ever come to an end? To get an answer, we put our skills to work and *automagically* trained a model using the past data — pushing it forward in time to see where things might be headed.
+We know (or do we?) that seeing a UFO can be quite the **unsettling** experience. We've been proven to be increasingly brave by the previous plots, so we asked ourselves: will the *Scared* trend ever come to an end? To get an answer, we put our skills to work and *automagically* trained a model using the past data, pushing it forward in time to see where things might be headed.
 
 ![Scared emotion projection over Years]({{ site.baseurl }}/assets/images/fp_scared_years_projection.png){:.centered}
 
-Yes, it's a long timespan. But as you can see by fitted curve, it suggests that the frightening effect of sightings might fade away by **2040**!. That’s a spark of hope — we’ll keep you posted when we get there.
+Yes, it's a long timespan. But as you can see by fitted curve, it suggests that the frightening effect of sightings might fade away by **2040**!. That’s a spark of hope, we’ll keep you posted when we get there.
 
 ### Carpe diem
 
@@ -133,7 +134,7 @@ For most reports, durations sit somewhere between **a few seconds and 15 minutes
 
 Now for the so-called **whiskers**: *Curious* (and a few others) has long ones, showing **big variation** in how long these sightings last. *Confused* and *Joy* again stick to **shorter whiskers** — pretty consistent and quick.
 
-Lastly, the **outliers**: *Confused* shows quite a few dots past the right whisker — **rare** but long events that stand very out from the usual. Most sightings are short, but occasionally something lasts way longer and clearly leaves people puzzled.
+Lastly, the **outliers**: *Confused* shows quite a few dots past the right whisker, **rare** but long events that stand very out from the usual. Most sightings are short, but occasionally something lasts way longer and clearly leaves people puzzled.
 
 ## Possible causes
 While UFO sightings may feel intense and scary, our analysis takes a data driven approach to look into possible explanations of the sightings. By examining correlations with external factors, such as extreme weather conditions, we explore whether these sightings might be better explained by natural phenomena rather than extraterrestrial activity. 
@@ -159,7 +160,7 @@ When we look at the data, we notice a clear pattern, reported UFO sightings ofte
 
 #### The Imperial March
 
-We wanted to have a closer look to movies, therefore we looked into how many times the word "movie" was actually **mentioned** in our dataset — and it showed up **1630** times! And that’s only counting the *direct* references.
+We wanted to have a closer look to movies, therefore we looked into how many times the word "movie" was actually **mentioned** in our dataset and it showed up **1630** times! And that’s only counting the *direct* references.
 
 We went further: read through the *comments* people made, checked which titles were most mentioned, and also looked online to identify blockbuster movies about UFOs. That gave us a list of **16 key titles**. Here are the most frequent ones:
 
@@ -181,13 +182,13 @@ We went further: read through the *comments* people made, checked which titles w
 | Old movie of the UFOs in Montana in the late forties (1950)	| 1 |
 | UFO Unplugged (1997)	| 1 |
 
-That's impressive, to say the least. Considering our passion for **Star Wars** (sorry Star Trek fans, we're a bit biased), we didn’t think twice before diving deeper into that one. So we used a diagram you’re probably very familiar with by now — the **barplot** — to see if there’s any **correlation** between the **number** of sightings reported in a given year and the **release of a Star Wars movie**:
+That's impressive, to say the least. Considering our passion for **Star Wars** (sorry Star Trek fans, we're a bit biased), we didn’t think twice before diving deeper into that one. So we used a diagram you’re probably very familiar with by now, the **barplot**, to see if there’s any **correlation** between the **number** of sightings reported in a given year and the **release of a Star Wars movie**:
 
 ![Star wars occurance in sightings by Years]({{ site.baseurl }}/assets/images/fp_sightings_by_star_wars_years.png){:.centered}
 
-Aside from the first two films (they were great), the number of sightings clearly **spikes** around the **release** of new Star Wars movies. Just look at the stretch from 2014 to 2020 — **three major releases and three sharp increases in reports**. Coincidence? We'll never know. But given how often the saga is mentioned in the comments, it’s fascinating to see how often people have **linked** their sightings to the most recent Star Wars release — almost like the movie gives them a cue to describe what they saw.
+Aside from the first two films (they were great), the number of sightings clearly **spikes** around the **release** of new Star Wars movies. Just look at the stretch from 2014 to 2020, **three major releases and three sharp increases in reports**. Coincidence? We'll never know. But given how often the saga is mentioned in the comments, it’s fascinating to see how often people have **linked** their sightings to the most recent Star Wars release — almost like the movie gives them a cue to describe what they saw.
 
-One thing to keep in mind: we’re looking at the *date of the sighting*, not when the report was posted. That’s why you’ll see Star Wars references even before the original 1977 release — some people report older experiences years later. Or maybe they were UFOs and have had the technology to predict the saga releases. 
+One thing to keep in mind: we’re looking at the *date of the sighting*, not when the report was posted. That’s why you’ll see Star Wars references even before the original 1977 release, some people report older experiences years later. Or maybe they were UFOs and have had the technology to predict the saga releases. 
 
 ### Do more people mean more UFOs?
 
@@ -205,23 +206,23 @@ We see that Washington, Oregon, California, and Arizona all report more sighting
 
 # Wrapping up
 
-After all the analysis, what do we really know? Well — **a lot**, but also... *not much*.
+After all the analysis, what do we really know? Well, **a lot**, but also... *not much*.
 
-Let’s start with what we found. **Extreme weather events** like *thunderstorms* and *hail* are clearly tied to spikes in UFO reports — likely because chaotic skies lead to misinterpretations. **Media** and **pop culture**, especially big *UFO-related news* or *movies*, also influence when people report sightings. And unsurprisingly, more populated areas report more UFOs: more people means more eyes on the sky.
+Let’s start with what we found. **Extreme weather events** like *thunderstorms* and *hail* are clearly tied to spikes in UFO reports, likely because chaotic skies lead to misinterpretations. **Media** and **pop culture**, especially big *UFO-related news* or *movies*, also influence when people report sightings. And unsurprisingly, more populated areas report more UFOs: more people means more eyes on the sky.
 
-<!-- But that’s not the whole story. The data defies some common stereotypes. Sightings aren’t clustered around *conspiracy hotspots* — they mirror *population density*. Most reports come from **everyday people** in *urban settings*, not skywatchers with telescopes and infrared cameras. -->
+But that’s not the whole story. The data defies some common stereotypes. Sightings aren’t clustered around *conspiracy hotspots*, they mirror *population density*. Most reports come from **everyday people** in *urban settings*, not skywatchers with telescopes and infrared cameras.
 
-<!-- We went further: looking at the *timing* of sightings across locations, we found **no ripple effect**. A sighting in one place doesn’t trigger a wave of follow-ups nearby. That could mean there’s no tight-knit network feeding into a shared phenomenon — or it raises the question: if something truly strange happened above a city, wouldn’t more people see and report it at once? -->
+We went further: in the technical analysis that we did, we found **no ripple effect** by looking at the *timing* of sightings across locations. A sighting in one place doesn’t trigger a wave of follow-ups nearby. That could mean there’s no tight-knit network feeding into a shared phenomenon, or it raises the question: if something truly strange happened above a city, wouldn’t more people see and report it at once?
 
-<!-- We also have to credit the people behind the dataset. They take the work seriously — flagging *common mix-ups* like *rockets*, *planets*, or *camera flares*, and screening for **hoaxes**. That adds a layer of trust to what’s still very human, very subjective data. -->
+We also have to credit the people behind the dataset. They take the work seriously, flagging *common mix-ups* like *rockets*, *planets*, or *camera flares*, and screening for **hoaxes**. That adds a layer of trust to what’s still very human, very subjective data.
 
-Now, if you’ve been paying attention, you’ll know **emotions** played a major role. We explored how people felt — *confused*, *scared*, *curious*, sometimes even *joyful*. These feelings rose and fell **over time**, peaked in **2012**, popped up in reaction to *movies*, and might even be fading slowly as the years pass.
+Now, if you’ve been paying attention, you’ll know **emotions** played a major role. We explored how people felt *confused*, *scared*, *curious*, sometimes even *joyful*. These feelings rose and fell **over time**, peaked in **2012**, popped up in reaction to *movies*, and might even be fading slowly as the years pass.
 
-But our findings aren't definitive. The tools we used, the *keywords* we chose, and the fact that the dataset relies on *voluntary submissions* — all introduce **biases**. Emotions are messy, and data can only go so far in capturing what people feel when they encounter something they can’t explain.
+But our findings aren't definitive. The tools we used, the *keywords* we chose, and the fact that the dataset relies on *voluntary submissions* all introduce **biases**. Emotions are messy, and data can only go so far in capturing what people feel when they encounter something they can’t explain.
 
 Still, this was **fun**.  
 
-We used what we learned to do **data mining**, build **visualizations**, tell a **story**, and maybe understand a little more about why people see what they see — or at least why they **feel** the way they do when they see it.  
+We used what we learned to do **data mining**, build **visualizations**, tell a **story**, and maybe understand a little more about why people see what they see, or at least why they **feel** the way they do when they see it.  
 
 And maybe that’s the point: not to conclude *if* UFOs exist, but to explore their **patterns** and **what they mean** to the people who experience them.
 
